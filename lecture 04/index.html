@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     <form action="">
+        <fieldset>
+            <legend>Personal Details</legend>
+             <label for="">  Email:</label>
+    <input type="email" name="emailid" placeholder="abc@gmail.com">
+    <br>
+    <label for="">Number:</label>
+    <!-- input has an attribute type which defines what type of input we have to take like email,password ,number defined by label name -->
+    <input type="number" name="phoneno">
+    <br>
+    <label for="">Password:</label>
+    <input type="password" name="password" placeholder="chooose strong one">
+    </fieldset>
+    <fieldset>
+        <legend>EXTRA BAKWAS</legend>
+             
+    <br>
+    <input type="file">
+    <br>
+    <input type="color" name="colour" value="">
+    <br>
+    <input type="date">
+    <br>
+    <input type="button" value="Example">
+    
+    <br>
+    <input type="hidden">
+
+    <input type="submit">
+    <input type="reset">
+    <button>Button</button>
+    <button type="reset">clear</button>
+    <button type="submit">submit</button>
+
+    <!-- button tag is semantic -->
+    <br>
+    <input type="radio" name="gender" value="f" id="female">
+    <label for="female">female</label>
+    <!-- for and id should be connected PROPERLY -->
+     <!-- FOR SHOULD MATCH WITH ID OF ELEMENT WHEREVER LINKED  -->
+    <br>
+    <input type="radio" name="gender" value="m" id="male">
+    <label for="male">male</label>
+    <br>
+    <!-- put name attribute in between input and keep all radio inputs under same name 
+     used for grouping them -->
+<!-- value attribute is imp to display the data -->
+ <!-- name attribute becomes the key of jason and value attrubute goes as data in the jason (gender:f) -->
+    <label for="">are u okay?</label>
+    <input type="checkbox">
+    <label for="">no🙄</label>
+    <!-- id is unique identification of an element -->
+     <!-- for and id attributes are used together to connect input&label tags -->
+    <textarea name="helllo" id=""></textarea>
+    <input type="place">
+    <!-- text area is for big textbox -->
+    <select name="country" id="">
+        <option value="IN">India</option>
+        <option value="RU" selected>Russia</option>
+        <option value="UK">United Kingdom</option>
+    </select>
+    <!-- select is for drop down menu  -->
+     <!-- disabled is used to disable the input from impact form 
+      it should be handled at BOTH frontend and backend-->
+    </fieldset>  
+    </form>
+    
+</body>
+</html>

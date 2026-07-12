@@ -1,0 +1,11 @@
+use of tags in html:
+h1,h2,....h6:used for different sized headings
+p: praeagraph
+pre: to display as it is 
+span:for repetion
+hr:for horizontal line
+br: line break
+a: for links
+img:for images
+b: bold/strong:bold
+i: italic
