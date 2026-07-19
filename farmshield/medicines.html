@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Medicine Management</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h2>🐔 FarmShield AI</h2>
+
+<ul>
+
+<li><a href="index.html">🏠 Dashboard</a></li>
+
+<li><a href="animals.html">🐄 Animals</a></li>
+
+<li><a href="medicines.html">💊 Medicines</a></li>
+
+<li><a href="risk.html">📋 Risk Assessment</a></li>
+
+<li><a href="alerts.html">🚨 Alerts</a></li>
+
+<li><a href="reports.html">📊 Reports</a></li>
+
+</ul>
+
+</div>
+
+<!-- Main Content -->
+
+<div class="main">
+
+<div class="topbar">
+
+<h1>💊 Medicine Administration & AMU Compliance</h1>
+
+<button id="showForm">
++ Add Medicine
+</button>
+
+</div>
+
+<!-- Medicine Form -->
+
+<div id="medicineForm" class="form-box">
+
+<h2>Add Medicine Record</h2>
+
+<label>Animal ID</label>
+
+<input
+type="text"
+id="animalID"
+placeholder="Example : C101">
+
+<label>Animal Type</label>
+
+<select id="animalType">
+
+<option>Chicken</option>
+
+<option>Pig</option>
+
+<option>Cow</option>
+
+</select>
+
+<label>Medicine Name</label>
+
+<input
+type="text"
+id="medicineName"
+placeholder="Amoxicillin">
+
+<label>Category</label>
+
+<select id="category">
+
+<option>Antibiotic</option>
+
+<option>Vaccine</option>
+
+<option>Vitamin</option>
+
+<option>Dewormer</option>
+
+</select>
+
+<label>Dosage</label>
+
+<input
+type="text"
+id="dosage"
+placeholder="5 ml">
+
+<label>Date</label>
+
+<input
+type="date"
+id="date">
+
+<label>Withdrawal Period (Days)</label>
+
+<input
+type="number"
+id="withdrawal">
+
+<label>Given By</label>
+
+<input
+type="text"
+id="givenBy"
+placeholder="Dr. Sharma">
+
+<button id="saveMedicine">
+
+Save Record
+
+</button>
+
+</div>
+
+<br>
+
+<!-- Search -->
+
+<input
+
+type="text"
+
+id="searchMedicine"
+
+placeholder="🔍 Search medicine...">
+
+<br><br>
+
+<!-- Filter -->
+
+<select id="filterCategory">
+
+<option>All</option>
+
+<option>Antibiotic</option>
+
+<option>Vaccine</option>
+
+<option>Vitamin</option>
+
+<option>Dewormer</option>
+
+</select>
+
+<br><br>
+
+<!-- Medicine Table -->
+
+<table id="medicineTable">
+
+<tr>
+
+<th>ID</th>
+
+<th>Animal ID</th>
+
+<th>Animal</th>
+
+<th>Medicine</th>
+
+<th>Category</th>
+
+<th>Dosage</th>
+
+<th>Date</th>
+
+<th>Withdrawal</th>
+
+<th>Given By</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</table>
+
+<br>
+
+<!-- Summary -->
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Total Medicines</h3>
+
+<h2 id="totalMedicine">
+
+0
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Antibiotics Used</h3>
+
+<h2 id="antibioticCount">
+
+0
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Vaccines</h3>
+
+<h2 id="vaccineCount">
+
+0
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Compliance</h3>
+
+<h2 id="compliance">
+
+Good
+
+</h2>
+
+</div>
+
+</div>
+
+<br>
+
+<!-- Alerts -->
+
+<div class="box">
+
+<h2>🚨 Compliance Alerts</h2>
+
+<ul id="alerts">
+
+<li>🟢 No alerts</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<script src="medicine.js"></script>
+
+</body>
+
+</html>

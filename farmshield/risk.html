@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Risk Assessment</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h2>🐔 FarmShield AI</h2>
+
+<ul>
+
+<li><a href="index.html">🏠 Dashboard</a></li>
+
+<li><a href="animals.html">🐄 Animals</a></li>
+
+<li><a href="medicines.html">💊 Medicines</a></li>
+
+<li><a href="risk.html">📋 Risk Assessment</a></li>
+
+<li><a href="alerts.html">🚨 Alerts</a></li>
+
+<li><a href="reports.html">📊 Reports</a></li>
+
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<div class="topbar">
+
+<h1>🛡️ Biosecurity Risk Assessment</h1>
+
+</div>
+
+<!-- Farm Details -->
+
+<div class="form-box" style="display:block;">
+
+<h2>Farm Information</h2>
+
+<label>Farmer Name</label>
+
+<input
+type="text"
+id="farmerName"
+placeholder="Enter Farmer Name">
+
+<label>Farm Type</label>
+
+<select id="farmType">
+
+<option>Poultry</option>
+
+<option>Pig</option>
+
+<option>Dairy</option>
+
+</select>
+
+<label>Assessment Date</label>
+
+<input
+type="date"
+id="assessmentDate">
+
+</div>
+
+<br>
+
+<!-- Checklist -->
+
+<div class="box">
+
+<h2>Biosecurity Checklist</h2>
+
+<div class="risk-checklist">
+
+<label>
+
+<input type="checkbox" class="riskQuestion">
+
+Are sick animals isolated immediately?
+
+</label>
+
+<br><br>
+
+<label>
+
+<input type="checkbox" class="riskQuestion">
+
+Is vaccination up to date?
+
+</label>
+
+<br><br>
+
+<label>
+
+<input type="checkbox" class="riskQuestion">
+
+Are antibiotics used only under veterinary guidance?
+
+</label>
+
+<br><br>
+
+<label>
+
+<input type="checkbox" class="riskQuestion">
+
+Is the farm cleaned and disinfected regularly?
+
+</label>
+
+<br><br>
+
+<label>
+
+<input type="checkbox" class="riskQuestion">
+
+Are new animals quarantined before entering the farm?
+
+</label>
+
+</div>
+
+<br>
+
+<button id="calculateRisk">
+
+Calculate Risk
+
+</button>
+
+</div>
+
+<br>
+
+<!-- Result -->
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Risk Score</h3>
+
+<h2 id="riskScore">
+
+0%
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Risk Level</h3>
+
+<h2 id="riskLevel">
+
+Not Calculated
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Questions Passed</h3>
+
+<h2 id="questionsPassed">
+
+0 / 5
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Biosecurity</h3>
+
+<h2 id="biosecurityStatus">
+
+Pending
+
+</h2>
+
+</div>
+
+</div>
+
+<br>
+
+<!-- Recommendations -->
+
+<div class="box">
+
+<h2>Recommendations</h2>
+
+<ul id="recommendations">
+
+<li>Complete the assessment to receive recommendations.</li>
+
+</ul>
+
+</div>
+
+<br>
+
+<!-- Assessment History -->
+
+<div class="box">
+
+<h2>Assessment History</h2>
+
+<table id="historyTable">
+
+<tr>
+
+<th>Date</th>
+
+<th>Farmer</th>
+
+<th>Farm</th>
+
+<th>Score</th>
+
+<th>Risk</th>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="risk.js"></script>
+
+</body>
+
+</html>

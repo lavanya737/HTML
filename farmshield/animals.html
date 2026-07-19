@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FarmShield </title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+    <h2>🐔 FarmShield </h2>
+
+    <ul>
+    
+
+<li><a href="index.html">🏠 Dashboard</a></li>
+
+<li><a href="animals.html">🐄 Animals</a></li>
+
+<li><a href="medicines.html">💊 Medicines</a></li>
+
+<li><a href="risk.html">📋 Risk Assessment</a></li>
+
+<li><a href="alerts.html">🚨 Alerts</a></li>
+
+<li><a href="reports.html">📊 Reports</a></li>
+
+<li><a href="settings.html">⚙ Settings</a></li>
+
+
+    </ul>
+</div>
+
+
+<div class="main">
+
+    <div class="topbar">
+
+        <h1>🐔 Animal Management</h1>
+
+        <button id="addAnimal">
+            + Add Animal
+        </button>
+        <div id="animalForm" class="form-box">
+
+    <h2>Add New Animal</h2>
+
+    <label>Animal Type</label><br>
+    <select id="animalType">
+        <option>Chicken</option>
+        <option>Pig</option>
+        <option>Cow</option>
+    </select>
+
+    <br><br>
+
+    <label>Breed</label><br>
+    <input type="text" id="breed">
+
+    <br><br>
+
+    <label>Age</label><br>
+    <input type="text" id="age">
+
+    <br><br>
+
+    <label>Health Status</label><br>
+    <select id="health">
+        <option>Healthy</option>
+        <option>Sick</option>
+    </select>
+
+    <br><br>
+
+    <button id="saveAnimal">
+        Save Animal
+    </button>
+  
+
+</div>
+
+    </div>
+
+    <div class="search-bar">
+
+        <input
+        type="text"
+        placeholder="Search Animal">
+
+        <select>
+
+            <option>All Animals</option>
+            <option>Chicken</option>
+            <option>Pig</option>
+
+        </select>
+
+    </div>
+
+    
+
+        <table id="animalTable">
+
+    <tr>
+        <th>ID</th>
+        <th>Animal</th>
+        <th>Breed</th>
+        <th>Age</th>
+        <th>Health</th>
+        <th>Status</th>
+        <th>Action</th>
+    </tr>
+
+</table>
+
+    </table>
+
+</div>
+
+<script src="animals.js"></script>
+
+</body>
+</html>

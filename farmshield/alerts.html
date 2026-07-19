@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FarmShield AI - Alerts</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h2>🐔 FarmShield</h2>
+
+<ul>
+
+<li><a href="index.html">🏠 Dashboard</a></li>
+
+<li><a href="animals.html">🐄 Animals</a></li>
+
+<li><a href="medicines.html">💊 Medicines</a></li>
+
+<li><a href="risk.html">📋 Risk Assessment</a></li>
+
+<li><a href="alerts.html">🚨 Alerts</a></li>
+
+<li><a href="reports.html">📊 Reports</a></li>
+
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<div class="topbar">
+
+<h1>🚨 Smart Alert Center</h1>
+
+</div>
+
+<!-- Summary Cards -->
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Total Alerts</h3>
+
+<h2 id="totalAlerts">0</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Critical</h3>
+
+<h2 id="criticalAlerts">0</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Warnings</h3>
+
+<h2 id="warningAlerts">0</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Normal</h3>
+
+<h2 id="normalAlerts">0</h2>
+
+</div>
+
+</div>
+
+<br>
+
+<!-- Live Alerts -->
+
+<div class="box">
+
+<h2>📢 Live Farm Alerts</h2>
+
+<table id="alertTable">
+
+<tr>
+
+<th>Priority</th>
+
+<th>Alert</th>
+
+<th>Status</th>
+
+<th>Time</th>
+
+</tr>
+
+</table>
+
+</div>
+
+<br>
+
+<!-- Recommended Actions -->
+
+<div class="box">
+
+<h2>✅ Recommended Actions</h2>
+
+<ul id="recommendationList">
+
+<li>System will generate recommendations automatically.</li>
+
+</ul>
+
+</div>
+
+<br>
+
+<!-- Alert Legend -->
+
+<div class="box">
+
+<h2>📌 Alert Priority</h2>
+
+<p>🔴 Critical – Immediate action required</p>
+
+<p>🟡 Warning – Attention needed</p>
+
+<p>🟢 Normal – No action required</p>
+
+</div>
+
+</div>
+
+<script src="alerts.js"></script>
+
+</body>
+
+</html>

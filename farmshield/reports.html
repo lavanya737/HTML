@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FarmShield AI - Reports</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h2>🐔 FarmShield AI</h2>
+
+<ul>
+
+<li><a href="index.html">🏠 Dashboard</a></li>
+
+<li><a href="animals.html">🐄 Animals</a></li>
+
+<li><a href="medicines.html">💊 Medicines</a></li>
+
+<li><a href="risk.html">📋 Risk Assessment</a></li>
+
+<li><a href="alerts.html">🚨 Alerts</a></li>
+
+<li><a href="reports.html">📊 Reports</a></li>
+
+</ul>
+
+</div>
+
+<!-- Main Content -->
+
+<div class="main">
+
+<div class="topbar">
+
+<h1>📊 Farm Report</h1>
+
+</div>
+
+<!-- Summary Cards -->
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Total Animals</h3>
+
+<h2 id="reportAnimals">0</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Medicine Records</h3>
+
+<h2 id="reportMedicines">0</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Risk Assessments</h3>
+
+<h2 id="reportRisk">0</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Compliance</h3>
+
+<h2 id="reportCompliance">Good</h2>
+
+</div>
+
+</div>
+
+<br>
+
+<!-- Farm Summary -->
+
+<div class="box">
+
+<h2>📋 Farm Summary</h2>
+
+<table>
+
+<tr>
+
+<td><strong>Healthy Animals</strong></td>
+
+<td id="healthyCount">0</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Sick Animals</strong></td>
+
+<td id="sickCount">0</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Antibiotic Records</strong></td>
+
+<td id="antibioticRecords">0</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Latest Risk Score</strong></td>
+
+<td id="latestRiskScore">-</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Latest Risk Level</strong></td>
+
+<td id="latestRiskLevel">-</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<br>
+
+<!-- Recent Medicines -->
+
+<div class="box">
+
+<h2>💊 Recent Medicine Records</h2>
+
+<table id="reportMedicineTable">
+
+<tr>
+
+<th>Animal</th>
+
+<th>Medicine</th>
+
+<th>Category</th>
+
+<th>Date</th>
+
+</tr>
+
+</table>
+
+</div>
+
+<br>
+
+<!-- Recent Risk Assessments -->
+
+<div class="box">
+
+<h2>📋 Recent Risk Assessments</h2>
+
+<table id="riskReportTable">
+
+<tr>
+
+<th>Date</th>
+
+<th>Farmer</th>
+
+<th>Farm</th>
+
+<th>Score</th>
+
+<th>Risk</th>
+
+</tr>
+
+</table>
+
+</div>
+
+<br>
+
+<!-- Report Status -->
+
+<div class="box">
+
+<h2>📝 Overall Farm Status</h2>
+
+<p id="overallStatus">
+
+Generating report...
+
+</p>
+
+</div>
+
+<br>
+
+<button onclick="window.print()">
+
+🖨️ Download / Print Report
+
+</button>
+
+</div>
+
+<script src="reports.js"></script>
+
+</body>
+
+</html>
